@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>নারীর কথা - দেবশ্রী দেবনাথ</title>
+    <meta name="description" content="দেবশ্রী দেবনাথের 'নারীর কথা' ব্লগ, নারীর ক্ষমতায়ন, অধিকার, ও সামাজিক পরিবর্তনের গল্প।">
+    <meta name="keywords" content="নারীর কথা, নারী, নারীর ক্ষমতায়ন, দেবশ্রী দেবনাথ, বাংলা ব্লগ, নারী অধিকার, লিঙ্গ সমতা, বাংলাদেশ">
+    <meta name="author" content="দেবশ্রী দেবনাথ">
+
+    <!-- Google Fonts: Baloo Da 2 for Bangla -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS CSS for Animate on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Baloo Da 2', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8; /* Light gray background */
+            color: #222; /* Dark gray text */
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header and Navbar */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #c2185b; /* Deep pink */
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #222;
+            font-weight: 500;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #c2185b;
+        }
+
+        /* Hamburger menu for mobile */
+        .hamburger-menu {
+            display: none;
+            font-size: 2em;
+            cursor: pointer;
+            color: #c2185b;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('https://images.unsplash.com/photo-1549728325-1e0e8e8e7c10?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+            text-align: center;
+            padding: 80px 20px;
+            border-bottom: 1px solid #eee;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            color: #c2185b;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            color: #444;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        .hero .btn-primary {
+            display: inline-block;
+            background-color: #c2185b;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hero .btn-primary:hover {
+            background-color: #a7164b;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 60px 0;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            border-radius: 8px;
+        }
+
+        section h2 {
+            font-size: 2.2em;
+            color: #c2185b;
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        /* Blog Card Layout */
+        .blog-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .blog-card {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .blog-card-content {
+            padding: 20px;
+        }
+
+        .blog-card-content h3 {
+            font-size: 1.5em;
+            color: #c2185b;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .blog-card-content p {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .blog-card-content .read-more-btn {
+            display: inline-block;
+            background-color: #c2185b;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .blog-card-content .read-more-btn:hover {
+            background-color: #a7164b;
+        }
+
+        /* About Section */
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .about-content img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 30px;
+            border: 5px solid #c2185b;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        .about-content p {
+            font-size: 1.1em;
+            color: #444;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: #f8f8f8;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        /* Modal for Full Blog Post */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1001; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            -webkit-animation: fadeIn 0.5s;
+            animation: fadeIn 0.5s;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 800px;
+            width: 90%;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            position: relative;
+            max-height: 90vh; /* Max height to allow scrolling */
+            overflow-y: auto; /* Scroll content if too long */
+            -webkit-animation: slideIn 0.5s;
+            animation: slideIn 0.5s;
+        }
+
+        .modal-content h2 {
+            color: #c2185b;
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        .modal-content p {
+            color: #333;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .modal-content img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+
+        .close-button {
+            color: #aaa;
+            font-size: 30px;
+            font-weight: bold;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .close-button:hover,
+        .close-button:focus {
+            color: #c2185b;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Modal Animations */
+        @-webkit-keyframes fadeIn {
+            from {opacity: 0} 
+            to {opacity: 1}
+        }
+        @keyframes fadeIn {
+            from {opacity: 0}
+            to {opacity: 1}
+        }
+        @-webkit-keyframes slideIn {
+            from {transform: translateY(-50px); opacity: 0}
+            to {transform: translateY(0); opacity: 1}
+        }
+        @keyframes slideIn {
+            from {transform: translateY(-50px); opacity: 0}
+            to {transform: translateY(0); opacity: 1}
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* Hide for mobile initially */
+                flex-direction: column;
+                width: 100%;
+                background-color: #ffffff;
+                position: absolute;
+                top: 70px; /* Below header */
+                left: 0;
+                padding: 20px 0;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            .hamburger-menu {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2.2em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+
+            .blog-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .about-content img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .modal-content {
+                width: 95%;
+                padding: 20px;
+            }
+
+            .modal-content h2 {
+                font-size: 1.5em;
+            }
+
+            .modal-content p {
+                font-size: 1em;
+            }
+        }
+
+        /* Section specific display (managed by JS) */
+        .page-section {
+            display: none; /* All sections hidden by default, shown by JS */
+        }
+        #home-section {
+            display: block; /* Home section shown by default on load */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo" onclick="showSection('home-section'); return false;">
+                নারীর কথা
+            </a>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                ☰ <!-- Hamburger icon -->
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" onclick="showSection('home-section'); return false;">হোম</a></li>
+                <li><a href="#" onclick="showSection('blog-section'); return false;">ব্লগ</a></li>
+                <li><a href="#" onclick="showSection('about-section'); return false;">আমাদের সম্পর্কে</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home-section" class="page-section" data-aos="fade-up">
+            <div class="container">
+                <div class="hero">
+                    <h1 data-aos="fade-down" data-aos-delay="200">নারীর কথা: শক্তি, সম্মান ও সাহসিকতা</h1>
+                    <p data-aos="fade-up" data-aos-delay="400">প্রতিটি নারীর গল্পেই লুকিয়ে আছে এক অদম্য শক্তি ও অনুপ্রেরণা। 'নারীর কথা' ব্লগে আমরা তুলে ধরি নারীদের জয়যাত্রা, সংগ্রাম ও সাফল্যের উপাখ্যান।</p>
+                    <button class="btn-primary" onclick="showSection('blog-section'); return false;" data-aos="zoom-in" data-aos-delay="600">সব ব্লগ দেখুন</button>
+                </div>
+
+                <h2 data-aos="fade-up">বিশেষ পোস্টসমূহ</h2>
+                <div class="blog-cards featured-blogs" id="featured-blogs-container" data-aos="fade-up" data-aos-delay="200">
+                    <!-- Featured blog cards will be injected here by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog-section" class="page-section" data-aos="fade-up">
+            <div class="container">
+                <h2 data-aos="fade-up">সব ব্লগ পোস্ট</h2>
+                <div class="blog-cards all-blogs" id="all-blogs-container" data-aos="fade-up" data-aos-delay="200">
+                    <!-- All blog cards will be injected here by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about-section" class="page-section" data-aos="fade-up">
+            <div class="container">
+                <h2 data-aos="fade-up">আমাদের সম্পর্কে</h2>
+                <div class="about-content" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://res.cloudinary.com/dqrcddpfz/image/upload/v1754202997/7319a5aa-0ce0-4342-ae4d-bc4ec799210a_sfhbfw.jpg" alt="দেবশ্রী দেবনাথ" data-aos="zoom-in">
+                    <p><strong>দেবশ্রী দেবনাথ</strong> একজন বাংলাদেশি লেখিকা ও সমাজকর্মী, যিনি নারীর ক্ষমতায়ন, অধিকার, এবং সামাজিক পরিবর্তনের লক্ষ্যে কাজ করছেন। তাঁর ব্লগ 'নারীর কথা' এর মাধ্যমে তিনি নারীদের সাহসিকতা, সংগ্রাম, ও সফলতার গল্প তুলে ধরেন। তিনি বিশ্বাস করেন, সঠিক প্ল্যাটফর্ম পেলে প্রতিটি নারীই সমাজের চালিকাশক্তি হয়ে উঠতে পারে এবং নিজেদের স্বপ্ন পূরণে সক্ষম।</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 নারীর কথা। সর্বস্বত্ব সংরক্ষিত। দেবশ্রী দেবনাথ কর্তৃক পরিচালিত।</p>
+        </div>
+    </footer>
+
+    <!-- Full Blog Post Modal -->
+    <div id="blog-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">×</span>
+            <h2 id="modal-title"></h2>
+            <div id="modal-post-image"></div>
+            <div id="modal-content-body"></div>
+        </div>
+    </div>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS library
+        AOS.init({
+            duration: 1000,
+            once: true, // Whether animation should happen only once - while scrolling down
+            mirror: false, // Whether elements should animate out while scrolling past them
+        });
+
+        // Toggle mobile navigation menu
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+
+        // Blog Posts Data (all content is stored here as JavaScript objects)
+        const blogPosts = [
+            {
+                id: 'nari-shakti-shadhinata',
+                title: 'নারীর শক্তি ও স্বাধীনতা',
+                image: 'https://images.pexels.com/photos/40192/woman-happiness-sunrise-silhouette-40192.jpeg',
+                excerpt: 'নারীর শক্তি অসীম, কিন্তু স্বাধীনতা অর্জনের পথ কখনো সহজ ছিল না। এই লেখায় আমরা নারীর আত্ম-উন্মোচন ও স্বাবলম্বী হওয়ার গুরুত্ব নিয়ে আলোচনা করব।',
+                fullContent: `
+                    <p>নারীর শক্তি অসীম, কিন্তু স্বাধীনতা অর্জনের পথ কখনো সহজ ছিল না। যুগ যুগ ধরে নারীরা সমাজ ও পরিবারের নানা প্রতিবন্ধকতা পেরিয়ে নিজেদের যোগ্যতা প্রমাণ করে চলেছে। আত্ম-উন্মোচন ও স্বাবলম্বী হওয়ার গুরুত্ব কেবল ব্যক্তিগত বিকাশের জন্য নয়, বরং একটি সুস্থ ও সমৃদ্ধ সমাজ গঠনের জন্যও অপরিহার্য।</p>
+                    <img src="https://images.unsplash.com/photo-1594738555157-cd34c000f9a2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="নারীর শক্তি">
+                    <p>আধুনিক বিশ্বে নারীর ভূমিকা শুধু ঘরের মধ্যে সীমাবদ্ধ নেই। শিক্ষা, বিজ্ঞান, রাজনীতি, অর্থনীতি—সর্বত্রই নারীরা নিজেদের পদচিহ্ন রাখছে। তাদের এই অগ্রযাত্রা শুধু নিজেদের নয়, পুরো মানবজাতির জন্য কল্যাণ বয়ে আনছে। একজন স্বাধীনচেতা নারী কেবল নিজের জীবনকেই উন্নত করেন না, তিনি তার চারপাশের পরিবেশকেও প্রভাবিত করেন ইতিবাচকভাবে।</p>
+                    <p>নারীর ক্ষমতায়ন মানে শুধু অর্থনৈতিক স্বাবলম্বীতা নয়, এর সঙ্গে জড়িত মানসিক স্বাধীনতা, সিদ্ধান্ত নেওয়ার অধিকার এবং সমাজে সমঅধিকার নিয়ে বাঁচার সুযোগ। যখন একজন নারী তার নিজের পছন্দ অনুযায়ী জীবনযাপন করতে পারেন, তখন তিনি তার সর্বোচ্চ সম্ভাবনাকে কাজে লাগাতে পারেন। আসুন, আমরা সকলে মিলে এমন একটি সমাজ গড়ি যেখানে প্রতিটি নারী তার প্রাপ্য সম্মান ও স্বাধীনতা নিয়ে বাঁচতে পারে।</p>
+                `
+            },
+            {
+                id: 'bangladesher-narider-shongramer-golpo',
+                title: 'বাংলাদেশের নারীদের সংগ্রামের গল্প',
+                image: 'https://images.pexels.com/photos/13617045/pexels-photo-13617045.jpeg',
+                excerpt: 'বাংলাদেশের নারীরা শতাব্দীর পর শতাব্দী ধরে কঠিন সংগ্রামের মধ্য দিয়ে নিজেদের অধিকার প্রতিষ্ঠা করেছে। তাদের গল্পগুলো প্রেরণা ও সাহসিকতায় ভরা।',
+                fullContent: `
+                    <p>বাংলাদেশের নারীরা শতাব্দীর পর শতাব্দী ধরে কঠিন সংগ্রামের মধ্য দিয়ে নিজেদের অধিকার প্রতিষ্ঠা করেছে। ভাষা আন্দোলন থেকে শুরু করে মুক্তিযুদ্ধ এবং পরবর্তীতে সামাজিক ও অর্থনৈতিক মুক্তি—প্রতিটি ধাপেই নারীদের অবদান অনস্বীকার্য। গ্রামীণ নারী থেকে শুরু করে শহরের পেশাজীবী, প্রতিটি স্তরেই তারা নিজেদের উপস্থিতি জানান দিচ্ছে।</p>
+                    <img src="https://images.unsplash.com/photo-1517457375-a83d6a9a3b61?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="বাংলাদেশের নারী">
+                    <p>অনেক নারী প্রতিকূলতা সত্ত্বেও তাদের শিক্ষাজীবন চালিয়ে গেছে, কেউবা ছোট ব্যবসা শুরু করে পরিবারের হাল ধরেছে। আবার অনেকেই রাজনৈতিক ও সামাজিক আন্দোলনে সক্রিয় ভূমিকা পালন করে এসেছে। এই নারীরা শুধু নিজেদের নয়, তাদের পরবর্তী প্রজন্মকেও পথ দেখাচ্ছে। বাল্যবিবাহ, যৌতুক প্রথা, নারী নির্যাতন—এসবের বিরুদ্ধে তাদের নিরন্তর সংগ্রাম সমাজকে এগিয়ে নিয়ে যাচ্ছে।</p>
+                    <p>তাদের গল্পগুলো কেবল দুঃখ বা বেদনার নয়, এগুলি জয় ও সাফল্যের গল্প। প্রতিটি গল্পেই আছে দৃঢ়তা, সাহস এবং পরিবর্তনের আকাঙ্ক্ষা। 'নারীর কথা' ব্লগে আমরা এই অদম্য নারীদের গল্প তুলে ধরতে বদ্ধপরিকর, যাতে নতুন প্রজন্ম তাদের থেকে অনুপ্রেরণা নিতে পারে।</p>
+                `
+            },
+            {
+                id: 'ekjon-mayer-atmothyager-golpo',
+                title: 'একজন মায়ের আত্মত্যাগের গল্প',
+                image: 'https://images.unsplash.com/photo-1543789397-2a54ce06c3cc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                excerpt: 'মা পৃথিবীর সবচেয়ে শক্তিশালী ও আত্মত্যাগী সত্তা। একজন মায়ের গল্প, যিনি তাঁর সন্তানের উজ্জ্বল ভবিষ্যতের জন্য সবকিছু করেছেন।',
+                fullContent: `
+                    <p>মা পৃথিবীর সবচেয়ে শক্তিশালী ও আত্মত্যাগী সত্তা। তাদের ভালোবাসা শর্তহীন এবং তাদের আত্মত্যাগ অতুলনীয়। এই লেখায় আমরা একজন মায়ের গল্প তুলে ধরব, যিনি তাঁর সন্তানের উজ্জ্বল ভবিষ্যতের জন্য নিজের সব সুখ ও স্বপ্ন বিসর্জন দিয়েছেন।</p>
+                    <img src="https://images.unsplash.com/photo-1512429402633-8c760824b23f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="মায়ের আত্মত্যাগ">
+                    <p>রেহানা বেগম, একজন সাধারণ গৃহিণী, যার স্বামী মারা যান যখন তাদের একমাত্র ছেলে রফিক ছোট। সমাজের প্রতিকূলতা এবং দারিদ্র্যের সঙ্গে লড়াই করে রেহানা ছেলেকে মানুষ করার স্বপ্ন দেখেছিলেন। তিনি দিনরাত পরিশ্রম করে, সেলাইয়ের কাজ করে, অন্যের বাড়িতে কাজ করে ছেলের পড়াশোনার খরচ জুগিয়েছেন। নিজের নতুন শাড়ি কেনার বা পছন্দের খাবার খাওয়ার শখ তিনি ত্যাগ করেছেন ছেলের মুখে হাসি ফোটাতে।</p>
+                    <p>রফিক আজ একজন প্রতিষ্ঠিত ডাক্তার। তার সফলতার পেছনে ছিল মায়ের অসীম কষ্ট ও আত্মত্যাগ। রেহানা বেগমের এই গল্প কেবল তার একার নয়, এটি হাজার হাজার মায়ের প্রতিচ্ছবি, যারা নিজেদের স্বপ্নকে জলাঞ্জলি দিয়ে সন্তানের ভবিষ্যতের পথ খুলে দেন। আসুন, আমরা এই মায়েদের প্রতি শ্রদ্ধা জানাই এবং তাদের অবদানকে সম্মান করি।</p>
+                `
+            },
+            {
+                id: 'gramin-narider-orthoneitik-kshomota',
+                title: 'গ্রামীণ নারীদের অর্থনৈতিক ক্ষমতা: পরিবর্তনের ঢেউ',
+                image: 'https://images.pexels.com/photos/33243126/pexels-photo-33243126.jpeg',
+                excerpt: 'বাংলাদেশের গ্রামীণ অর্থনীতিতে নারীদের ভূমিকা দিন দিন বাড়ছে। কিভাবে ক্ষুদ্রঋণ ও প্রশিক্ষণের মাধ্যমে তারা স্বাবলম্বী হচ্ছে, তার এক ঝলক।',
+                fullContent: `
+                    <p>বাংলাদেশের গ্রামীণ অর্থনীতিতে নারীদের ভূমিকা দিন দিন বাড়ছে। এক সময় যে নারীরা শুধু ঘরের কাজকর্মে সীমাবদ্ধ ছিল, তারাই এখন নিজেদের মেধা ও শ্রম দিয়ে পরিবারের অর্থনৈতিক চালিকাশক্তি হয়ে উঠেছে। ক্ষুদ্রঋণ (microcredit) এবং বিভিন্ন সরকারি-বেসরকারি সংস্থার প্রশিক্ষণ কর্মসূচি গ্রামীণ নারীদের জন্য নতুন দিগন্ত খুলে দিয়েছে।</p>
+                    <img src="https://images.unsplash.com/photo-1549419163-9fc8148b3b64?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="গ্রামীণ নারী">
+                    <p>শফিকা বেগম, যিনি একসময় স্বামী পরিত্যক্তা হয়ে কঠিন জীবনযাপন করছিলেন, তিনি একটি সেলাই প্রশিক্ষণ নিয়ে নিজেই ছোট একটি বুটিক শপ শুরু করেন। এখন তার দোকানে আরও কয়েকজন গ্রামীণ নারী কাজ করেন, যারা শফিকার মতোই স্বাবলম্বী হওয়ার স্বপ্ন দেখেন। শফিকার এই উদ্যোগ শুধু তাকে আর্থিকভাবে শক্তিশালী করেনি, বরং সমাজে তার সম্মানও বাড়িয়েছে।</p>
+                    <p>এমন অসংখ্য শফিকা বেগম রয়েছেন বাংলাদেশের গ্রামে গ্রামে। তারা হাঁস-মুরগি পালন, সবজি চাষ, হস্তশিল্প, এবং আরও অনেক ছোট ছোট উদ্যোগের মাধ্যমে নিজেদের এবং পরিবারের জীবনমান উন্নত করছেন। এই অর্থনৈতিক ক্ষমতায়ন তাদের সামাজিক সিদ্ধান্ত গ্রহণেও গুরুত্বপূর্ণ ভূমিকা রাখতে সাহায্য করে, যা সামগ্রিকভাবে গ্রামীণ সমাজে ইতিবাচক পরিবর্তন আনছে।</p>
+                `
+            },
+            {
+                id: 'nari-o-shikkha-alo-chhoranor-pothe',
+                title: 'নারী ও শিক্ষা: আলো ছড়ানোর পথে',
+                image: 'https://images.pexels.com/photos/7652465/pexels-photo-7652465.jpeg',
+                excerpt: 'শিক্ষাই নারীর প্রকৃত মুক্তির পথ। কিভাবে শিক্ষা নারীর জীবন পরিবর্তন করছে এবং সমাজে আলো ছড়াচ্ছে, সেই আলোচনাই এই পোস্টে।',
+                fullContent: `
+                    <p>শিক্ষাই নারীর প্রকৃত মুক্তির পথ। জ্ঞান ও শিক্ষার আলো নারীকে শুধুমাত্র ব্যক্তিগত জীবনেই নয়, বরং সমাজ ও রাষ্ট্রের উন্নয়নেও গুরুত্বপূর্ণ ভূমিকা পালনে সক্ষম করে তোলে। যখন একজন নারী শিক্ষিত হন, তখন তিনি কেবল নিজেকেই আলোকিত করেন না, বরং তার পরিবার, সন্তান এবং পুরো সমাজকেও আলোকিত করেন।</p>
+                    <img src="https://images.unsplash.com/photo-1577894576307-e17f04c6f505?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="শিক্ষা ও নারী">
+                    <p>বাংলাদেশে নারী শিক্ষার হার উল্লেখযোগ্যভাবে বৃদ্ধি পেয়েছে। স্কুল-কলেজ থেকে শুরু করে বিশ্ববিদ্যালয় পর্যন্ত মেয়েদের অংশগ্রহণ এখন চোখে পড়ার মতো। এই শিক্ষা তাদের আত্মবিশ্বাস বাড়াচ্ছে, তাদের স্বাধীনভাবে চিন্তা করতে শেখাচ্ছে এবং সমাজের কুসংস্কার ও প্রতিবন্ধকতা মোকাবিলায় সাহায্য করছে। একজন শিক্ষিত নারী স্বাস্থ্য, পুষ্টি এবং সন্তানের শিক্ষায় অধিক সচেতন হন, যা একটি সুস্থ প্রজন্ম গঠনে সহায়ক।</p>
+                    <p>শিক্ষিত নারীরা বিভিন্ন পেশায় নিজেদের প্রতিষ্ঠিত করছেন—ডাক্তার, প্রকৌশলী, শিক্ষক, গবেষক, উদ্যোক্তা—সব খাতেই তাদের পদচারণা বাড়ছে। তারা কর্মক্ষেত্রে নিজেদের দক্ষতা প্রমাণ করে অর্থনৈতিকভাবে স্বাবলম্বী হচ্ছেন। 'নারীর কথা' ব্লগে আমরা বিশ্বাস করি, নারী শিক্ষার প্রসারের মাধ্যমেই একটি সমতাভিত্তিক ও প্রগতিশীল সমাজ নির্মাণ সম্ভব।</p>
+                `
+            }
+        ];
+
+        // Function to create a blog card HTML element
+        function createBlogCard(post, isFeatured = false) {
+            const card = document.createElement('div');
+            card.className = 'blog-card';
+            // Add AOS animation attributes based on whether it's a featured card or not
+            if (isFeatured) {
+                card.setAttribute('data-aos', 'zoom-in');
+            } else {
+                card.setAttribute('data-aos', 'fade-up');
+            }
+
+            card.innerHTML = `
+                <img src="${post.image}" alt="${post.title}">
+                <div class="blog-card-content">
+                    <h3>${post.title}</h3>
+                    <p>${post.excerpt}</p>
+                    <button class="read-more-btn" onclick="openModal('${post.id}')">আরও পড়ুন</button>
+                </div>
+            `;
+            return card;
+        }
+
+        // Function to render blog posts into the DOM
+        function renderBlogPosts() {
+            const featuredContainer = document.getElementById('featured-blogs-container');
+            const allContainer = document.getElementById('all-blogs-container');
+
+            // Clear previous content
+            featuredContainer.innerHTML = '';
+            allContainer.innerHTML = '';
+
+            // Render featured posts (first 3) for the Home section
+            blogPosts.slice(0, 3).forEach(post => {
+                featuredContainer.appendChild(createBlogCard(post, true));
+            });
+
+            // Render all posts for the Blog section
+            blogPosts.forEach(post => {
+                allContainer.appendChild(createBlogCard(post));
+            });
+        }
+
+        // Function to show a specific section and hide others
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.page-section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+
+            // Hide mobile menu if it's open
+            const navLinks = document.querySelector('.nav-links');
+            if (navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+            }
+            // Refresh AOS to ensure animations apply to newly visible sections
+            AOS.refresh();
+        }
+
+        // Modal elements
+        const blogModal = document.getElementById('blog-modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalPostImage = document.getElementById('modal-post-image');
+        const modalContentBody = document.getElementById('modal-content-body');
+
+        // Function to open the blog post modal
+        function openModal(postId) {
+            const post = blogPosts.find(p => p.id === postId);
+            if (post) {
+                modalTitle.innerHTML = post.title;
+                // Add image inside modal if it exists
+                modalPostImage.innerHTML = post.image ? `<img src="${post.image}" alt="${post.title}">` : '';
+                modalContentBody.innerHTML = post.fullContent;
+                blogModal.style.display = 'flex'; // Use flex to center the modal content
+                document.body.style.overflow = 'hidden'; // Prevent body from scrolling when modal is open
+            }
+        }
+
+        // Function to close the blog post modal
+        function closeModal() {
+            blogModal.style.display = 'none';
+            document.body.style.overflow = ''; // Restore body scrolling
+        }
+
+        // Close modal if clicked outside modal content
+        window.onclick = function(event) {
+            if (event.target == blogModal) {
+                closeModal();
+            }
+        }
+
+        // Initial setup on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            renderBlogPosts();
+            showSection('home-section'); // Display the home section by default
+        });
+    </script>
+</body>
+</html>
